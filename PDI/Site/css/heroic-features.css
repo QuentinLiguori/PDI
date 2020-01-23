@@ -1,0 +1,21 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+@font-face {
+    font-family: TitleFont;
+    src: url(bebas.ttf);
+}
+h1{
+  font-family: TitleFont;
+}
+#com{
+  border-style: inset;
+}
+#com_content{
+  border-style: solid;
+}
