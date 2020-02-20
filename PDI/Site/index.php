@@ -56,33 +56,40 @@ $bdd=connect_db();
     	<label for="password">Mot de Passe :</label><input type="password" name="password" id="password" />
     	</p>
     	</fieldset>
-    	<p><input type="submit" value="Connexion" id="connect"/></p></form>
+    	<p><input type="submit" value="Connexion" id="connect"/></p>
+      <p>Inscrivez vous</p>
+      <p><input type="submit" value="Inscription" name="register id="register"/></p>
+      </form>
 
     	';
     }
     else
     {
-        if (empty($_POST['login']) || empty($_POST['password']) ) //Oublie d'un champ
+        if (isset($_POST['register']) )
         {
-
-            echo '<form method="post" action="index.php">
-          	<fieldset>
-          	<legend>Connexion</legend>
-          	<p>
-          	<label for="pseudo">Login :</label><input name="login" type="text" id="login" /><br />
-          	<label for="password">Mot de Passe :</label><input type="password" name="password" id="password" />
-          	</p>
-          	</fieldset>
-          	<p><input type="submit" value="Connexion" id="connect"/></p></form>
-            <p>Une erreur s\'est produite pendant votre identification.
-            Vous devez remplir tous les champs.</p>
-          	';
-
+            echo '<meta http-equiv="refresh" content="1;url=./web/register.php"/>';
         }
-        else //On check le login et le mot de passe
-        {
-              check_user_status($_POST['login'], $_POST['password'], $bdd);
+        else {
+            if (empty($_POST['login']) || empty($_POST['password'])) {
+              echo '<form method="post" action="index.php">
+            	<fieldset>
+            	<legend>Connexion</legend>
+            	<p>
+            	<label for="pseudo">Login :</label><input name="login" type="text" id="login" /><br />
+            	<label for="password">Mot de Passe :</label><input type="password" name="password" id="password" />
+            	</p>
+            	</fieldset>
+            	<p><input type="submit" value="Connexion" id="connect"/></p></form>
+              <p>Une erreur s\'est produite pendant votre identification.
+              Vous devez remplir tous les champs.</p>
+            	';
+            }
+            else //On check le login et le mot de passe
+            {
+                  check_user_status($_POST['login'], $_POST['password'], $bdd);
+            }
         }
+
   }
     ?>
     </header>

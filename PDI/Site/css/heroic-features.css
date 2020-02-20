@@ -13,6 +13,9 @@ body {
 h1{
   font-family: TitleFont;
 }
+#formreg{
+  display: inline-block; 
+}
 #com{
   border-style: inset;
 }

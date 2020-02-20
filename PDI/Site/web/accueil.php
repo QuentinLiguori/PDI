@@ -40,12 +40,12 @@ $bdd=connect_db();
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <!-- Use Session to print the name of the client and go to his personal page -->
-            <a class="nav-link" href="./profil.php"><?php echo $_SESSION['login']; ?>
+            <a class="nav-link" href="./profil.php"><?php echo $_SESSION['name']; ?>
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <?php $client=client_by_login($_SESSION['id'],$bdd);
+            <?php $client=client_by_login($_SESSION['login'],$bdd);
             // Retrieving client info using the client id
             ?>
 
@@ -76,7 +76,18 @@ $bdd=connect_db();
       </fieldset>
     </header>
 
+    <div class="suggestion">
+      <h2>Vos suggestions</h2>
+      <?php
+      //  $suggest = suggested_Books($_SESSION['login'],$bdd);
+        //foreach ($suggest as $book) {
+        //  display_book($book);
+      //  }
+      ?>
+    </div>
 
+    <div class="">
+      <h2>Vos recherches</h2>
     <?php
     //Check if rechacc is set
     if(isset($_POST['rechacc'])){
@@ -110,6 +121,7 @@ $bdd=connect_db();
     }
 
     ?>
+    </div>
 
   </div>
   <footer class="py-5 bg-dark">

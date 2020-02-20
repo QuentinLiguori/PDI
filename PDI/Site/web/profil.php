@@ -35,12 +35,12 @@ $bdd=connect_db();
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"><?php echo $_SESSION['login']; ?>
+            <a class="nav-link" href="#"><?php echo $_SESSION['name']; ?>
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <?php $client=client_by_login($_SESSION['id'],$bdd); ?>
+            <?php $client=client_by_login($_SESSION['login'],$bdd); ?>
 
           </li>
           <li class="nav-item">
@@ -55,14 +55,14 @@ $bdd=connect_db();
   <div class="container">
     <p></p>
         <header class="jumbotron my-4">
-            <h1 class="display-3">Bienvenue <?php echo $_SESSION['login']; ?> !</h1>
+            <h1 class="display-3">Bienvenue <?php echo $_SESSION['name']; ?> !</h1>
             <h2>Parcourez tout les livres de votre bibliotheque</h2>
         </header>
 
         <?php
           //affiche tous les films appartenant au client
           echo '  <div class="row text-center">';
-          $book = book_by_client($_SESSION['id'], $bdd);
+          $book = book_by_client($_SESSION['login'], $bdd);
           foreach ($book as $row) {
             display_own_book($row);
           }

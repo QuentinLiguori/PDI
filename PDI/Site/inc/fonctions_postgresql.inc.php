@@ -15,18 +15,79 @@ function connect_db(){
     die('Erreur : '.$e->getMessage());
   }
 }
+//Fonction d'Inscription
+function create_user_status($login_seek, $password_seek,$firstname,$lastname,$age,$gender, $country, $sp_category, $bdd){
 
-//Fonction de connection
-function check_user_status($login_seek, $password_seek, $bdd){
   //On prepare, et execute, une requete pour recuperer les informations du client d'adresse mail donnée en entrée
   $sql=$bdd->prepare("SELECT * FROM client  WHERE login='$login_seek'");
   $sql->execute();
   $result = $sql->fetch();
+  //Si le login donné en entrée n'existe pas
+  if (empty($result)) {
+    echo $lastname;
+    $sql2=$bdd->prepare("INSERT INTO client VALUES (:login, :password_client, :first_name, :last_name, :age, :gender, :country, :sp_category)");
+    $sql2->bindParam(':login', $login_seek);
+    $sql2->bindParam(':password_client', $password_seek);
+    $sql2->bindParam(':first_name', $firstname);
+    $sql2->bindParam(':last_name', $lastname);
+    $sql2->bindParam(':age', $age);
+    $sql2->bindParam(':gender', $gender);
+    $sql2->bindParam(':country', $country);
+    $sql2->bindParam(':sp_category', $sp_category);
+
+    $sql2->execute();
+
+    //On stock son prenom et son id dans des variables de session
+    $_SESSION['login'] = $login_seek;
+    $_SESSION['name'] = $firstname;
+    //on le redirige vers la page accueil.php
+      //echo '<meta http-equiv="refresh" content="1;url=./accueil.php"/>';
+  }
+  //Si le login existe
+  else {
+    //On réaffiche le formulaire et un message d'erreur
+    echo '<form method="post" action="register.php" id="formreg">
+    <fieldset>
+    <legend>Inscription</legend>
+    <p>
+    <label for="pseudo">Login :</label><input name="loginreg" type="text" id="loginreg" /><br />
+    <label for="password">Mot de Passe :</label><input type="password" name="password" id="password" />
+    <label for="firstname">Prénom :</label><input type="text" name="firstname" id="firstname" />
+    <label for="lastname">Nom :</label><input type="text" name="lastname" id="lastname" />
+    <label for="age">Age :</label><input type="number" name="age" id="age" />
+
+    <label for="genre">Genre :</label>
+    Monsieur<input type="radio" name="gender" id="man" value="m" checked/>
+    Madame<input type="radio" name="gender" id="woman" value="f"/>
+
+    <label for="country">Pays :</label><input type="text" name="country" id="country" />
+    <label for="sp_category">Catégorie Socio-Professionelles :</label><input type="radio" name="sp_category" id="sp_category1" value="Agriculteurs exploitants" checked/>
+    Artisants, Commercants, Chef d\'entreprise <input type="radio" name="sp_category" id="sp_category2" value="Artisans, commerçants, chefs d entreprise"/>
+    Cadres et Profession Intellectulles Supèrieures <input type="radio" name="sp_category" id="sp_category3" value="Cadres et professions intellectuelles supérieures"/>
+    Professions Intermediaires <input type="radio" name="sp_category" id="sp_category4" value="Professions intermédiaires"/>
+    Employés <input type="radio" name="sp_category" id="sp_category5" value="Employés"/>
+    Ouvrier <input type="radio" name="sp_category" id="sp_category6" value="Ouvriers"/>
+    Retraités <input type="radio" name="sp_category" id="sp_category7" value="Retraités"/>
+    Autres/Sans Activités Professionelles <input type="radio" name="sp_category" id="sp_category8" value="Autres sans activité professionnelle"/>
+
+    </p>
+    </fieldset>
+    <p><input type="submit" value="Inscription" id="register"/></p></form>
+    <p>Erreur : Ce login existe deja.</p>
+    ';
+  }
+}
+//Fonction de connection
+function check_user_status($login_seek, $password_seek, $bdd){
+  //On prepare, et execute, une requete pour recuperer les informations du client d'adresse mail donnée en entrée
+  $sql=$bdd->prepare("SELECT * FROM client  WHERE login=?");
+  $sql->execute($login_seek);
+  $result = $sql->fetch();
   //Si le mot de passe donnée en entrée correspond
-  if (password_verify($password_seek, $result['password_client'])) {
+  if (strcmp($password_seek, $result['password_client'])) {
       //On stock son prenom et son id dans des variables de session
-      $_SESSION['login'] = $result['first_name'];
-      $_SESSION['id'] = $result['login'];
+      $_SESSION['login'] = $result['login'];
+      $_SESSION['name'] = $result['first_name'];
       //on le redirige vers la page accueil.php
       echo '<meta http-equiv="refresh" content="1;url=./web/accueil.php"/>';
   }
@@ -93,40 +154,22 @@ function client_by_name($name_seek, $bdd){
   return $result;
 }
 
-/*
-//Fonction d'ajout de crédit à un client
-function add_credit($donnee, $add, $bdd){
-  //On recupere le resultat de l'addition : credit du client + credit ajouté
-  $new_credit=$donnee['credit']+$add;
-  $id=$donnee['id_client'];
-
-  //On prepare et execute la requete pour mettre à jour la valeur du credit du client d'id $id
-  $sql=$bdd->prepare("UPDATE client SET credit=$new_credit WHERE id_client=$id");
-  $sql->execute();
-}
-
-//Fonction de retrait de crédit à un client
-function remove_credit($donnee, $price, $bdd){
-  //On recupere le resultat de la soustraction : credit du client - prix du film
-  $new_credit=$donnee['credit']-$price;
-  $id=$donnee['id_client'];
-
-  //On prepare et execute la requete pour mettre à jour la valeur du credit du client d'id $id
-  $sql=$bdd->prepare("UPDATE client SET credit=$new_credit WHERE id_client=$id");
-  $sql->execute();
-}
-
-//Fonction de selection de tous les crédits
-function sum_credit($bdd){
-
-  //On excute et retourne le resutat de la requete qui calcule la somme des credits de tous les clients
-  $sql = $bdd->query('SELECT SUM(credit)AS total FROM client');
-  $result = $sql->fetch();
-  return $result;
-}*/
 
 /*************************************Book*************************************/
 
+function seen_book($login, $book,$bdd){
+
+  $sql2=$bdd->prepare('SELECT * FROM seen WHERE login=? AND id_book=?');
+  $sql2->execute(array($login, $book));
+  $result=$sql2->fetch();
+
+  if (empty($result)) {
+    $sql=$bdd->prepare('INSERT INTO seen(login, id_book) VALUES (:login, :id_book)');
+    $sql->execute(array(
+      "login" => $login,
+      "id_book" => $book));
+  }
+}
 /*
 //Fonction d'ajout de film
 function add_movie($title, $release_year, $duration, $price, $resume, $option_act, $option_dir, $bdd){
@@ -159,12 +202,7 @@ function add_movie($title, $release_year, $duration, $price, $resume, $option_ac
   echo 'Votre film à bien été créé.';
 }
 
-//Fonction de suppression d'un film
-function del_movie($del_id, $bdd){
-  //On prepare et execute la requete pour supprimer le film d'id $del_id
-  $sql=$bdd->prepare("DELETE FROM movie WHERE id_movie=$del_id");
-  $sql->execute();
-}
+
 */
 
 //Fonction de selection de tous les livres

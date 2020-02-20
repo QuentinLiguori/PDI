@@ -13,7 +13,7 @@ $bdd=connect_db();
   <meta name="author" content="">
   <?php
   $donnee = book_by_id($_GET['book'],$bdd);
-  seen_book($donnee['id_book'],$_SESSION['id'],$bdd);
+  seen_book($donnee['id_book'],$_SESSION['login'],$bdd);
   ?>
   <title><?php echo $donnee['title'] ?> - Bibliotèque en ligne</title>
 
@@ -37,7 +37,7 @@ $bdd=connect_db();
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="./profil.php"><?php echo $_SESSION['login']; ?>
+            <a class="nav-link" href="./profil.php"><?php echo $_SESSION['name']; ?>
               <span class="sr-only">(current)</span>
             </a>
           </li>
