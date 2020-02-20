@@ -1,0 +1,61 @@
+**********************To-Do**********************
+
+A faire :
+	*réussir à acceder à register
+	
+	*ajouter les prix aux livres (update)
+
+	*réparer la connection
+
+	*afficher suggestions et debugguer les fonctions associ
+
+	*ecrire seen book
+
+	*Selon la période de l’année, des genres seront plus mis en avant que d’autres en
+	augmentant artificiellement les scores des livres correspondants
+
+	*Les tendances évolueront tout au long de l’année et seront calculées en fonction du nombre de 		livres vendu sur une période de temps définie
+
+Déjà fait : 
+	*le nom du fichier php location
+	 
+	*les noms de variables de session
+	
+	*rajouter price aux book
+	 
+	*finir register
+
+**********************Informations**********************
+
+SERIAL	4 bytes	1 to 2,147,483,647
+
+Genre de livre :
+	*Société (m)
+	*Jeunesse (f)
+	*Art et éducation (f)
+	*BD (fm)
+	*Cuisine (f)
+	*Érotisme (fm)
+	*Fantasy Terreur (m)
+	*Histoire (m)
+	*Spiritualité (fm)
+	*Romans (fm)
+	*Policier (m)
+	*Romance (f)
+	*Sciences (m)
+	*Sciences-Fiction (m)
+
+Correspondance prix/sp_category :
+
+	*Agriculteurs exploitants <= 14€
+	*Artisans, commerçants, chefs d'entreprise <= 20€
+	*Cadres et professions intellectuelles supérieures (tous prix)
+	*Professions intermédiaires <= 16€
+	*Employés <= 12€
+	*Ouvriers <= 10€
+	*Retraités <= 18€
+	*Autres sans activité professionnelle <= 8€
+
+Âge/Année de parution : +/- 20 (41 ans d'intervalle)
+
+
