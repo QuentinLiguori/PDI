@@ -1,8 +1,10 @@
 **********************To-Do**********************
 
 A faire :
+	*Bloquer les genres dans la BDD
+
 	*réussir à acceder à register
-	
+
 	*ajouter les prix aux livres (update)
 
 	*réparer la connection
@@ -16,13 +18,13 @@ A faire :
 
 	*Les tendances évolueront tout au long de l’année et seront calculées en fonction du nombre de 		livres vendu sur une période de temps définie
 
-Déjà fait : 
+Déjà fait :
 	*le nom du fichier php location
-	 
+
 	*les noms de variables de session
-	
+
 	*rajouter price aux book
-	 
+
 	*finir register
 
 **********************Informations**********************
@@ -43,7 +45,7 @@ Genre de livre :
 	*Policier (m)
 	*Romance (f)
 	*Sciences (m)
-	*Sciences-Fiction (m)
+	*Science-fiction (m)
 
 Correspondance prix/sp_category :
 
@@ -57,5 +59,3 @@ Correspondance prix/sp_category :
 	*Autres sans activité professionnelle <= 8€
 
 Âge/Année de parution : +/- 20 (41 ans d'intervalle)
-
-
