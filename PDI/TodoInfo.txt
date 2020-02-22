@@ -3,15 +3,14 @@
 A faire :
 	*Bloquer les genres dans la BDD
 
-	*réussir à acceder à register
+	
 
 	*ajouter les prix aux livres (update)
 
-	*réparer la connection
 
 	*afficher suggestions et debugguer les fonctions associ
 
-	*ecrire seen book
+	
 
 	*Selon la période de l’année, des genres seront plus mis en avant que d’autres en
 	augmentant artificiellement les scores des livres correspondants
@@ -19,6 +18,13 @@ A faire :
 	*Les tendances évolueront tout au long de l’année et seront calculées en fonction du nombre de 		livres vendu sur une période de temps définie
 
 Déjà fait :
+
+	*ecrire seen book
+	
+	*réparer la connection
+
+	*réussir à acceder à register
+	
 	*le nom du fichier php location
 
 	*les noms de variables de session
