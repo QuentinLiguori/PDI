@@ -1,0 +1,39 @@
+Page de garde + sommaire
+
+Voir le mail de liu
+
+Slide 1 Pésentation du projet 
+
+Ce projet est une application WEB réalisant une librairie en ligne permettant de suggerer automatiquement aux clients des livres correspondtans à leur profil.
+Les suggestions sont basés sur le profil des clients,la tendance, l'historique d'achat, les évaluations ...
+
+Slide 2 : fonctionnalité du projet
+
+Creation d'utilisateur
+achat de livre
+accès au profil
+note d'un livre
+
+Slide 3 : : conception techinque WEB
+
+Mettre schema BDD
+Et Schema WEB
+
+Slide 4 : conception technique algo
+Algo de suggestion -> 3 fonction  
+Fonctionnement général de l'algo
+
+Slide 5 : conception technique algo 2
+Montrer l'utilité des trois fonctions
+Et leurs fonctionnements 
+
+Slide 6 : conception ?
+
+Slide 7 : Déroulement du projet
+Schéma de répartition des taches et au fil du temps, gestions du projet et autres ...
+(Comme BDD je sais pas si tu vois)
+
+Slide 8 : Résultats du projet
+Conclusion
+Ameilloration
+Ce qui marche / ce qui marche pas.
