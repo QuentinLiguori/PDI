@@ -1,7 +1,7 @@
 **********************To-Do**********************
 
 A faire :
-	
+	*Changer les correspondance iso
 
 	*Changer les regles du calcul
 	
