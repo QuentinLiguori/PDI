@@ -1,16 +1,17 @@
 **********************To-Do**********************
 
 A faire :
-	*Bloquer les genres dans la BDD
-
 	
+
+	*Changer les regles du calcul
+	
+	*enlever les livres acheté de la suggestion
+	
+	*cryptr mots de passe
 
 	*ajouter les prix aux livres (update)
 
-
 	*afficher suggestions et debugguer les fonctions associ
-
-	
 
 	*Selon la période de l’année, des genres seront plus mis en avant que d’autres en
 	augmentant artificiellement les scores des livres correspondants
@@ -19,6 +20,8 @@ A faire :
 
 Déjà fait :
 
+	*Bloquer les genres dans la BDD
+	
 	*ecrire seen book
 	
 	*réparer la connection
