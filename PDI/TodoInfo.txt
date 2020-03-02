@@ -68,3 +68,41 @@ Correspondance prix/sp_category :
 	*Autres sans activité professionnelle <= 8€
 
 Âge/Année de parution : +/- 20 (41 ans d'intervalle)
+
+*****************DIAPOS**************
+GÉNÉRAL :
+Viré les "Conception technique" et mettre des termes plus spécifique
+pas un mot par ligne
+
+Page de garde :
+PDI->enlevé 
+Nom en capslock
+Nom des jurys
+Nouveau logo 
+
+Diapo sommaire :
+Viré les deux points 
+
+Diapo 2 :
+Déplacer MCD et 3-tiers
+Être plus général 
+
+Diapo 3 (a ajouter) 
+Préciser les fonctionnalité 
+Résumé le documents spécificité 
+
+Diapo 6
+Viré le diviser pour mieux régner 
+
+Diapo 7
+Pas facile à suivre->C 2 LA MERDE QUOI
+FAIRE PLUS DE SCEMA 
+
+Diapo 8
+Virer le graph de merde 
+
+Diapo 9 : conclusion et perceptive 
+Mettre plus d'un  mot à chaque sous-titre 
+
+Admin modifier info des livres seulement
+
