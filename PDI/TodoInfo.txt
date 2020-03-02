@@ -7,8 +7,6 @@ A faire :
 	
 	*tronquer la suggestion et la mettre sur une autre page
 	
-	*enlever les livres acheté de la suggestion
-	
 	*cryptr mots de passe
 
 	*ajouter les prix aux livres (update)
@@ -21,6 +19,8 @@ A faire :
 	*Les tendances évolueront tout au long de l’année et seront calculées en fonction du nombre de 		livres vendu sur une période de temps définie
 
 Déjà fait :
+		
+	*enlever les livres acheté de la suggestion
 
 	*Bloquer les genres dans la BDD
 	
