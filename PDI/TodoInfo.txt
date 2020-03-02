@@ -5,6 +5,8 @@ A faire :
 
 	*Changer les regles du calcul
 	
+	*tronquer la suggestion et la mettre sur une autre page
+	
 	*enlever les livres acheté de la suggestion
 	
 	*cryptr mots de passe
