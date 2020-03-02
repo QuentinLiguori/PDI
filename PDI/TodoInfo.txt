@@ -5,6 +5,8 @@ A faire :
 
 	*Changer les regles du calcul
 	
+	*Eviter les effacement de livres dans suggest books à cause des scores
+	
 	*tronquer la suggestion et la mettre sur une autre page
 	
 	*cryptr mots de passe
