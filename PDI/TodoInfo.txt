@@ -2,7 +2,7 @@
 
 A faire :
 	
-	*cryptr mots de passe
+	*cryptr mots de passe => (Yaël) push fonction_postgresql et index.php
 
 	*Gerer les radios form
 
