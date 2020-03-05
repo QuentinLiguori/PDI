@@ -11,7 +11,7 @@ A faire :
 	
 	*cryptr mots de passe
 
-	
+	*Gerer les radios form
 
 	*afficher suggestions et debugguer les fonctions associ
 
