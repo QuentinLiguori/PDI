@@ -11,7 +11,7 @@ A faire :
 	
 	*cryptr mots de passe
 
-	*ajouter les prix aux livres (update)
+	
 
 	*afficher suggestions et debugguer les fonctions associ
 
@@ -24,6 +24,9 @@ A faire :
 	*Enlever image non ateignable
 
 Déjà fait :
+
+	*ajouter les prix aux livres (update)
+	
 	*Les tendances évolueront tout au long de l’année et seront calculées en fonction du nombre de 		livres vendu sur une période de temps définie
 	
 	*page suggestion
