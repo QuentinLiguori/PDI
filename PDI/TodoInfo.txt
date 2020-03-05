@@ -2,6 +2,12 @@
 
 A faire :
 	*Changer les correspondance iso
+	
+	*modification profil sur sa page
+	
+	*Note/score du livre possible modif à verifier
+	
+	*categorie scocio pro dans register
 
 	*Changer les regles du calcul
 	
