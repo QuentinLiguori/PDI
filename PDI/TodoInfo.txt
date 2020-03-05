@@ -3,11 +3,11 @@
 A faire :
 	*Changer les correspondance iso
 	
-	*modification profil sur sa page
+	
 	
 	*Note/score du livre possible modif à verifier
 	
-	*categorie scocio pro dans register
+	
 
 	*Changer les regles du calcul
 	
@@ -28,8 +28,12 @@ A faire :
 
 Déjà fait :
 		
+	*categorie scocio pro dans register
+	
 	*enlever les livres acheté de la suggestion
 
+	*modification profil sur sa page
+	
 	*Bloquer les genres dans la BDD
 	
 	*ecrire seen book
