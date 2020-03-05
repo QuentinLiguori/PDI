@@ -4,8 +4,6 @@ A faire :
 	*Changer les correspondance iso
 	
 	*Ajout de livre bug
-	
-	*page suggestion
 
 	*Changer les regles du calcul
 	
@@ -27,6 +25,8 @@ A faire :
 
 Déjà fait :
 	*Les tendances évolueront tout au long de l’année et seront calculées en fonction du nombre de 		livres vendu sur une période de temps définie
+	
+	*page suggestion
 	
 	*Selon la période de l’année, des genres seront plus mis en avant que d’autres en
 	augmentant artificiellement les scores des livres correspondants
