@@ -1,19 +1,12 @@
 **********************To-Do**********************
 
 A faire :
-	*Changer les correspondance iso
-	
-	*Ajout de livre bug
-
-	*Changer les regles du calcul
-	
-	*tronquer la suggestion et la mettre sur une autre page
 	
 	*cryptr mots de passe
 
 	*Gerer les radios form
 
-	*afficher suggestions et debugguer les fonctions associ
+	
 
 	*Logo et nom du site
 	
@@ -21,10 +14,21 @@ A faire :
 	
 	*Ajouter des clients
 	
-	*Enlever image non ateignable
+	
 
 Déjà fait :
+	*Enlever image non ateignable
+	
+	*afficher suggestions et debugguer les fonctions associ
 
+	*tronquer la suggestion et la mettre sur une autre page
+	
+	*Changer les regles du calcul
+	
+	*Changer les correspondance iso
+	
+	*Ajout de livre bug
+	
 	*ajouter les prix aux livres (update)
 	
 	*Les tendances évolueront tout au long de l’année et seront calculées en fonction du nombre de 		livres vendu sur une période de temps définie
