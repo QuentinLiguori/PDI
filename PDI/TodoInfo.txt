@@ -5,13 +5,9 @@ A faire :
 	
 	*Ajout de livre bug
 	
-	*Note/score du livre possible modif à verifier
-	
 	*page suggestion
 
 	*Changer les regles du calcul
-	
-	*Eviter les effacement de livres dans suggest books à cause des scores
 	
 	*tronquer la suggestion et la mettre sur une autre page
 	
@@ -21,13 +17,24 @@ A faire :
 
 	*afficher suggestions et debugguer les fonctions associ
 
-	*Selon la période de l’année, des genres seront plus mis en avant que d’autres en
-	augmentant artificiellement les scores des livres correspondants
-
-	*Les tendances évolueront tout au long de l’année et seront calculées en fonction du nombre de 		livres vendu sur une période de temps définie
+	*Logo et nom du site
+	
+	*Ajouter des Livres
+	
+	*Ajouter des clients
+	
+	*Enlever image non ateignable
 
 Déjà fait :
-		
+	*Les tendances évolueront tout au long de l’année et seront calculées en fonction du nombre de 		livres vendu sur une période de temps définie
+	
+	*Selon la période de l’année, des genres seront plus mis en avant que d’autres en
+	augmentant artificiellement les scores des livres correspondants
+	
+	*Eviter les effacement de livres dans suggest books à cause des scores
+	
+	*Note/score du livre possible modif à verifier
+	
 	*categorie scocio pro dans register
 	
 	*enlever les livres acheté de la suggestion
