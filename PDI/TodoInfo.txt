@@ -3,11 +3,11 @@
 A faire :
 	*Changer les correspondance iso
 	
-	
+	*Ajout de livre bug
 	
 	*Note/score du livre possible modif à verifier
 	
-	
+	*page suggestion
 
 	*Changer les regles du calcul
 	
