@@ -1,0 +1,16 @@
+**********************À faire**********************
+
+*logo pour page de garde
+*shéma répartition des taches et (faux) calendrier (inclure les points d'avancements et autres) (d8)
+*ordre diapo 5 et 6
+
+**********************If needed**********************
+*Espace administrateur
+ Ajout d’un livre → ajout d’une relation « écrit »
+ Suppression en cascade
+
+**********************Fait**********************
+
+*MCD pour genealité du projet (diapo 3)
+*shéma des deux profils et de la temp et de lalgo (voir paint degueu) (d5)
+*shéma organigramme des dossier et fichier web (d4)
