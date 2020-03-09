@@ -1,0 +1,39 @@
+
+ETAPE 1 :se connecter en tant qu'admin
+
+Ajouter un livre 
+
+ Le Pistolero Stephen king 1982
+
+ L'homme en noir fuyait à travers le désert, et le pistolero le poursuivait.  Le sens change dans la nouvelle traduction L'homme en noir fuyait à travers le désert, et le pistolero le suivait.
+
+fantasy horreur
+
+15€
+
+*************************************************************************************************
+ETAPE 2 :se connecter en tant que client
+
+
+Creer un compte depuis la page register
+
+voir la suggestion
+rechercher un film
+aller sur ça page 
+Voir la sugestion
+le louer
+verifier la suggestion
+
+*************************************************************************************************
+ETAPE 3 :se connecter en tant qu'admin
+
+	Suprimer le film créer
+
+
+*************************************************************************************************
+ETAPE 4 :se connecter en tant que client
+
+	On montre que la location a été suprimé en cascade 
+
+
+
